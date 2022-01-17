@@ -66,21 +66,12 @@ body{
 }
 
 
-.titolo-sotto:before{
+.title:before{
     content: "\25be";
 }
 
-.titolo-sotto{
+.title{
     margin-top: 20px;
-}
-
-.check-entity{
-    color:#80cdbb;
-    padding:1px 3px ;
-    border: 2px solid #80cdbb;
-    border-radius: 50%;
-    border-width: 1px;
-    font-size: 12px;
 }
 
 .uncheck-entity{
@@ -90,6 +81,13 @@ body{
     border-radius: 50%;
     border-width: 1px;
     font-size: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.uncheck-entity:hover{
+    color: rgb(26, 0, 170);
+    border: 2px solid rgb(26, 0, 170);
 }
 
 .checked{

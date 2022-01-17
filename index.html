@@ -35,10 +35,10 @@
             <div class="container3">
                 
 
-                <h2 class="titolo-sotto">Board Games</h2>
+                <h2 class="title">Board Games</h2>
                 <ul>
-                    <li v-for="(element, index) in elements"  class="checked">
-                        <span class="uncheck-entity">&#10008;</span>
+                    <li v-for="(element, index) in elements"  class="checked remove">
+                        <span class="uncheck-entity" @click="removeTodo(index)">&#10008;</span>
                         <span :class="itsDone(element.done)">{{element.text}}</span>
                     </li>
                 </ul>
