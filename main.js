@@ -28,8 +28,7 @@ del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
 let app = new Vue({
     el: "#app",
-    data: {
-
+    data: {        
         elements: [
             {
                 text: 'Monopoly',
@@ -59,7 +58,8 @@ let app = new Vue({
                 text: 'Sherlock Holmes Consulente Investigativo: I Delitti del Tamigi',
                 done: true
             },
-        ]
+        ],
+        inputTodo: ""
     },
     methods: {
         itsDone: function(indexTodo){
@@ -71,8 +71,22 @@ let app = new Vue({
 
         //funzione per rimuovere un oggetto dall'array di oggetti
         removeTodo: function(indexTodo){
-            this.elements.splice(indexTodo, 1)
+            this.elements.splice(indexTodo, 1);
+        },
+
+        //funzione per inserire un nuovo oggetto nell'array di oggetti
+        addTodo: function(inputTodo){
+            if(inputTodo != ""){
+               newElement = {
+                   text: inputTodo,
+                   done: false
+               }    
+               this.elements.push(newElement);                          
+            }else{
+            alert("Inserisci un nuovo oggetto!");
+            }            
         }
+        
     }
 })
 

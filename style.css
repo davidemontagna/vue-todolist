@@ -39,9 +39,6 @@ body{
     padding: 10px 20px;
     border: 1px solid #d3d7db ;
     border-radius: 5px;
-}
-
-#button1{
     background-color: #47adf1;
     color: #fff;
 }
@@ -64,7 +61,6 @@ body{
     font-weight: bold;
     vertical-align: middle;
 }
-
 
 .title:before{
     content: "\25be";
