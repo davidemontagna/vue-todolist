@@ -1,11 +1,11 @@
 let app = new Vue({
     el: "#app",
     data: {
-        
+
         elements: [
             {
                 text: 'Monopoly',
-                done: false
+                done: true
             },
             {
                 text: 'Vudulhu',
@@ -17,7 +17,7 @@ let app = new Vue({
             },
             {
                 text: 'Puerto Rico',
-                done: false
+                done: true
             },
             {
                 text: 'Dixit',
@@ -29,11 +29,17 @@ let app = new Vue({
             },
             {
                 text: 'Sherlock Holmes Consulente Investigativo: I Delitti del Tamigi',
-                done: false
+                done: true
             },
         ]
     },
     methods: {
-
+        itsDone: function(indexTodo){
+            if(indexTodo == false){
+                return "";                
+            }            
+            return "done";
+            
+        }
     }
 })

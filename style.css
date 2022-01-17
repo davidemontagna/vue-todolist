@@ -97,5 +97,9 @@ body{
     list-style: none;
 }
 
+.done{
+    text-decoration-line: line-through;
+}
+
 
 
