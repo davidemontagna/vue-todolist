@@ -41,6 +41,7 @@ body{
     border-radius: 5px;
     background-color: #47adf1;
     color: #fff;
+    cursor: pointer;
 }
 
 #add-todo{
