@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Toboolist</title>
+</head>
+<body>
+    <header>
+
+        <!--Logo e header-->
+        <div class="container">
+            <img id="logo" src="img/Logo.png" alt="">
+            <span id="logo-text">Toboolist</span>
+        </div>
+    </header>
+
+    <main id="app">
+        <section>
+            <!--Bottoni-->
+            <div class="container2">
+                <input class="button" id="button1" type="button" value="Aggiungi">
+                <input type="text" name="" id="add-todo">
+                
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="container3">
+                
+
+                <h2 class="titolo-sotto">Board Games</h2>
+                <ul>
+                    <li v-for="(element, index) in elements" class="checked">
+                        <span class="uncheck-entity">&#10008;</span>
+                        {{element.text}}
+                    </li>
+                </ul>
+                
+
+            </div>
+            
+        </section>
+        
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

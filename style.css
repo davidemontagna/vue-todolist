@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: white;
+    height: 100px;
+    padding: 25px;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.container2{
+    padding: 10px;
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.container3{
+    padding: 30px;
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.button{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: 1px solid #d3d7db ;
+    border-radius: 5px;
+}
+
+#button1{
+    background-color: #47adf1;
+    color: #fff;
+}
+
+#add-todo{
+    height: 35px;
+    width: 30%;
+}
+
+#logo{  
+    width: 50px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 90px;
+}
+
+#logo-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+.titolo-sotto:before{
+    content: "\25be";
+}
+
+.titolo-sotto{
+    margin-top: 20px;
+}
+
+.check-entity{
+    color:#80cdbb;
+    padding:1px 3px ;
+    border: 2px solid #80cdbb;
+    border-radius: 50%;
+    border-width: 1px;
+    font-size: 12px;
+}
+
+.uncheck-entity{
+    color:#eb5852;
+    padding:1px 3px ;
+    border: 2px solid #eb5852;
+    border-radius: 50%;
+    border-width: 1px;
+    font-size: 12px;
+}
+
+.checked{
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+
