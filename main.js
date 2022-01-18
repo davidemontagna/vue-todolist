@@ -85,8 +85,13 @@ let app = new Vue({
             }else{
             alert("Inserisci un nuovo oggetto!");
             }            
+        },
+
+        //al click inverto la proprietà done da true a false e viceversa
+        invertDone: function(indexTodo){
+            this.elements[indexTodo].done = !this.elements[indexTodo].done;
         }
-        
+
     }
 })
 

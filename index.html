@@ -24,7 +24,7 @@
         <section>
             <!--Bottoni-->
             <div class="container2">
-                <button @click="addTodo(inputTodo)" class="button">Aggiungi</button>
+                <button @click="addTodo(inputTodo)" class="button" :submit="clearInput">Aggiungi</button>
                 <input type="text" v-model="inputTodo" @keyup.enter="addTodo(inputTodo)" id="add-todo">              
             </div>
         </section>
@@ -33,9 +33,9 @@
             <div class="container3">                
                 <h2 class="title">Board Games</h2>
                 <ul>
-                    <li v-for="(element, index) in elements"  class="checked remove">
+                    <li v-for="(element, index) in elements" class="checked">
                         <span class="uncheck-entity" @click="removeTodo(index)">&#10008;</span>
-                        <span :class="itsDone(element.done)">{{element.text}}</span>
+                        <span :class="itsDone(element.done)" @click="invertDone(index)">{{element.text}}</span>
                     </li>
                 </ul>                
 
